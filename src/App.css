@@ -1,0 +1,69 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+.image{
+  /* background-color: rgb(127, 152, 225); */
+  border-radius: 50px;
+}
+.image:hover {
+  filter: drop-shadow(0 0 2em #353dd9e2);
+}
+@keyframes fadeInOut {
+  100% {
+    opacity: 0; /* Start with the image completely transparent */
+  }
+  50% {
+    opacity: 1; /* Fade the image in to fully opaque */
+  }
+  100% {
+    opacity: 1; /* Fade the image out to completely transparent */
+  }
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Apply the box shadow to the image */
+  /* width: 200px; */
+  animation: fadeInOut 3s ease-in-out infinite; /* Apply the fade in and out animation to the image */
+}
