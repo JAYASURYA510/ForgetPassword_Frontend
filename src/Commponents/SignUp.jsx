@@ -26,7 +26,7 @@ function Signup() {
       return;
     }
     try {
-      const response = await fetch('https://resetpasw.onrender.com/signup', {
+      const response = await fetch('https://forget-password-backend.onrender.com/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
