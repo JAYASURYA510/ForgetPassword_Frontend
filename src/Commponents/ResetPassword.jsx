@@ -22,9 +22,9 @@ function ResetPassword() {
     e.preventDefault();
     setLoading(true); // Set loading to true
 
-    axios.post(`https://resetpasw.onrender.com/reset-password/${id}/${token}`, { password })
+    axios.post(`https://forget-password-backend.onrender.com/reset-password/${id}/${token}`, { password })
       .then((res) => {
-        if (res.data.Status === 'Success') {
+        if (res.data.Status === 'Password reset Success') {
         
           navigate('/login');
         }

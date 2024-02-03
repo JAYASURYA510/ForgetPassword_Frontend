@@ -27,7 +27,7 @@ const Login = () => {
       return;
     }
     try {
-      const response = await fetch('https://resetpasw.onrender.com/login', {
+      const response = await fetch('https://forget-password-backend.onrender.com/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

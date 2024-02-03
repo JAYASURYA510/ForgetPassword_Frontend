@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const HomePage = () => {
   const handleLogout = async () => {
     try {
-      const response = await fetch('https://resetpasw.onrender.com/logout', {
+      const response = await fetch('https://forget-password-backend.onrender.com/logout', {
         method: 'POST',
       });
       if (!response.ok) {

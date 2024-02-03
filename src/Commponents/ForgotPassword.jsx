@@ -12,7 +12,7 @@ function ForgotPassword() {
     axios.defaults.withCredentials = true;
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('https://resetpasw.onrender.com/forgot-password', {email})
+        axios.post('https://forget-password-backend.onrender.com/forgot-password', {email})
         .then(res => {
             if(res.data.Status === "Success") {
                 navigate('/login')

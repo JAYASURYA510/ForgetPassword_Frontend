@@ -12,7 +12,7 @@ const UsersList = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await fetch('https://resetpasw.onrender.com/app/users', {
+        const response = await fetch('https://forget-password-backend.onrender.com/app/users', {
           headers: {
             Authorization: token,
           },
