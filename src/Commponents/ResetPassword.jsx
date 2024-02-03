@@ -24,7 +24,7 @@ function ResetPassword() {
 
     axios.post(`https://forget-password-backend.onrender.com/reset-password/${id}/${token}`, { password })
       .then((res) => {
-        if (res.data.Status === 'Password reset Success') {
+        if (res.data.Status === 'Success') {
         
           navigate('/login');
         }
