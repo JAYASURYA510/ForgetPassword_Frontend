@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 import './Styles.css';
 import HashLoader from "react-spinners/HashLoader";
@@ -17,13 +17,12 @@ function ResetPassword() {
   const navigate = useNavigate();
   const { id, token } = useParams();
   const [loading, setLoading] = useState(false); // Add loading state
-  const [parms ] = useSearchParams();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true); // Set loading to true
 
-    axios.post(`https://forget-password-backend.onrender.com/reset-password/${parms.get("id")}/${parms.get("token")}`, { password })
+    axios.post(`https://forget-password-backend.onrender.com/reset-password/${id}/${token}`, { password })
       .then((res) => {
         if (res.data.Status === 'Password reset Success') {
         
