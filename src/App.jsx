@@ -49,7 +49,7 @@ const App = () => {
         <Route path='login' element={<Login/>} />
         <Route path='UsersList' element={<UsersList /> } /> 
         <Route path='forgotpssword' element={<ForgotPassword />} />
-        <Route path="/reset-passwod/:id/:token" element={<ResetPassword />} />
+        <Route path="/reset-passwod/" element={<ResetPassword />} />
         <Route path="/HomePage" element={isAuthenticated ? <HomePage />: <Navigate to="/login" />} />
       </Routes>
    </div>
