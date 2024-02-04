@@ -27,14 +27,14 @@ function ForgotPassword() {
         <h4>Forgot Password</h4>
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
-            <label htmlFor="email">
+            <label htmlFor="gmail">
               <strong>Email</strong>
             </label>
             <input
-              type="email"
-              placeholder="Enter Email"
+              type="gmail"
+              placeholder="Enter gmail"
               autoComplete="off"
-              name="email"
+              name="gmail"
               className="form-control rounded-0"
               onChange={(e) => setEmail(e.target.value)}
             />
