@@ -28,11 +28,11 @@ function ForgotPassword() {
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
             <label htmlFor="email">
-              <strong>Gmail</strong>
+              <strong>Email</strong>
             </label>
             <input
               type="email"
-              placeholder="Enter Gmail"
+              placeholder="Enter Email"
               autoComplete="off"
               name="email"
               className="form-control rounded-0"
