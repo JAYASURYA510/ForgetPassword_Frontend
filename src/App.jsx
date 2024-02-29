@@ -11,7 +11,7 @@ import ForgotPassword from './Commponents/ForgotPassword';
 import ResetPassword from './Commponents/ResetPassword';
 
 const App = () => {
-  const isAuthenticated = true; // Replace with actual authentication check
+  const isAuthenticated = true; 
 
   return (
     <div>
